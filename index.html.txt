@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuổi Trẻ Tiến Bước - 26/3</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5fff7;
+    color:#333;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    background:#008c3a;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#ffe600;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,140,58,0.7),rgba(0,140,58,0.7)),
+    url("https://images.unsplash.com/photo-1520975916090-3105956dac38") center/cover no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+    max-width:700px;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 25px;
+    background:#ffe600;
+    color:#008c3a;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#008c3a;
+    font-size:32px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.poem{
+    text-align:center;
+    font-style:italic;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* FOOTER */
+footer{
+    background:#008c3a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>26/3</h2>
+    <ul>
+        <li><a href="#gioithieu">Giới thiệu</a></li>
+        <li><a href="#lichsu">Lịch sử</a></li>
+        <li><a href="#camhung">Cảm hứng</a></li>
+        <li><a href="#thoca">Góc thơ</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Tuổi Trẻ Tiến Bước Dưới Cờ Đoàn</h1>
+    <p>Chào mừng ngày thành lập Đoàn Thanh niên Cộng sản Hồ Chí Minh 26/3</p>
+    <button class="btn" onclick="document.getElementById('gioithieu').scrollIntoView()">Khám phá</button>
+</div>
+
+<section id="gioithieu">
+    <h2>Giới thiệu</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Tinh thần tuổi trẻ</h3>
+<p>Thanh niên Việt Nam luôn xung kích, sáng tạo và giàu nhiệt huyết trong học tập và rèn luyện.</p>
+        </div>
+        <div class="card">
+            <h3>Hoạt động phong trào</h3>
+            <p>Các chương trình tình nguyện, văn nghệ, thể thao giúp đoàn viên phát triển toàn diện.</p>
+        </div>
+        <div class="card">
+            <h3>Khát vọng tương lai</h3>
+            <p>Tuổi trẻ hôm nay quyết tâm học tập tốt để xây dựng đất nước ngày càng giàu mạnh.</p>
+        </div>
+    </div>
+</section>
+
+<section id="lichsu">
+    <h2>Lịch sử 26/3</h2>
+    <div class="card">
+        <p>
+        Ngày 26/3 đánh dấu sự ra đời của tổ chức Đoàn Thanh niên Cộng sản Hồ Chí Minh —
+        lực lượng kế cận tin cậy của Đảng, luôn đi đầu trong mọi phong trào thanh niên.
+        </p>
+    </div>
+</section>
+
+<section id="camhung">
+    <h2>Cảm hứng tuổi trẻ</h2>
+    <div class="card">
+        <p>
+        Là học sinh, chúng em tự hào được đứng trong hàng ngũ Đoàn,
+        nguyện rèn đức – luyện tài – sống có trách nhiệm và cống hiến cho cộng đồng.
+        </p>
+    </div>
+</section>
+
+<section id="thoca">
+    <h2>Góc Thơ Tháng Ba</h2>
+    <div class="poem">
+        Tháng ba về rực sắc xanh <br>
+        Tuổi trẻ vững bước trưởng thành hôm nay <br>
+        Dưới cờ Đoàn sáng tương lai <br>
+        Chung tay dựng xây ngày mai huy hoàng.
+    </div>
+</section>
+
+<footer>
+    © 2026 - Báo Tường Điện Tử 26/3 | Thiết kế bởi Tổ 4 - 12A11 - THPT Quế Võ Số 1
+</footer>
+
+</body>
+</html>
